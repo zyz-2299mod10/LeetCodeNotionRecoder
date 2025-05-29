@@ -16,3 +16,15 @@ It will create a page call "Test title" on the current day
 ```
 python main.py --url LeetCode-Problem-URL
 ```
+
+* You can set an alias in Linux for easier command usage.
+* Alias in **windows** <br>
+  (https://learn.microsoft.com/zh-tw/powershell/module/microsoft.powershell.utility/set-alias?view=powershell-7.5) <br>
+  (https://blog.poychang.net/make-your-powershell-handy/) <br>
+  you can use the following example
+  ```
+  function lr{
+	param($URL)
+	python .\path\to\LeetCodeNotionRecoder\main.py --url $URL
+   }
+  ```
