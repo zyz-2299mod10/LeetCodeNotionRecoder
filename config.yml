@@ -1,6 +1,6 @@
 API:
-  NOTION_TOKEN: "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"
-  DATABASE_ID: "82ad48c8ad45457288036b07970ad6ad"
+  NOTION_TOKEN: "your notion key"
+  DATABASE_ID: "your database id" # need to connect to your connections
 
 Topic:
   Array: "Array"
