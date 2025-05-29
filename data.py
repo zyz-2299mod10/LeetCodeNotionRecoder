@@ -41,8 +41,14 @@ def get_test_data():
             ]
         },
         "網址": {
-            "url": "https://leetcode.com/problems/minimum-path-sum/description/"
-        }
+            "rich_text": [
+                {
+                    "text": {
+                        "content": "https://leetcode.com/problems/minimum-path-sum/description/"
+                    }
+                }
+            ] 
+        }        
     }
 
     context = [
@@ -112,7 +118,7 @@ def get_LeetCode_data(url:str):
 
     title = f"{info['id']}. {info['title']}"
     difficulty = info["difficulty"]
-    published_date = datetime.now().astimezone(timezone.utc).date().isoformat()
+    published_date = datetime.now().astimezone().date().isoformat()
     
     Tags = {
         "multi_select":
@@ -155,7 +161,13 @@ def get_LeetCode_data(url:str):
             }
         },
         "網址": {
-            "url": url
+            "rich_text": [
+                {
+                    "text": {
+                        "content": url
+                    }
+                }
+            ] 
         }
     }
     LeetCode_data["Tags"] = Tags
